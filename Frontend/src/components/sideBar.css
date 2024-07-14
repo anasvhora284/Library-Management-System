@@ -1,0 +1,101 @@
+.SidebarMainDiv {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  height: 100vh;
+  padding: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.LogoDetailsTabsContainer {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.UserDetailsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--poppins);
+}
+
+.UserDetailsDiv span {
+  font-weight: 600;
+}
+
+.Role {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.SidebarLogoName {
+  font-weight: bold;
+}
+
+.LogoutBtnDIv {
+  width: 70%;
+}
+
+.LogOutButton:hover::after {
+  background-color: #920505 !important;
+  min-width: 5em;
+  font-size: medium;
+}
+
+@media (max-width: 767px) {
+  .SidebarMainDiv {
+    width: 20vw;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .SidebarMainDiv {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .UserDetailsDiv > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .DashboardPagesDiv .sideBarOption:nth-child(2) .OptionimageTextDiv img {
+    width: 70%;
+    height: 70%;
+  }
+  .MobileImageDiv img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .LogOutButton button {
+    width: 70%;
+  }
+
+  .LogOutButton .CustomButtonTextDiv {
+    display: none;
+  }
+
+  .LogOutButton .MobileImageDiv {
+    display: block;
+  }
+
+  .LogOutButton .MobileImageDiv img {
+    width: 30px;
+    height: 30px;
+  }
+}

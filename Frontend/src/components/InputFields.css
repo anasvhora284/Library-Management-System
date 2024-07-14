@@ -1,0 +1,111 @@
+.InputFields {
+  min-width: 400px;
+  font-family: var(--smooch-sans);
+  display: flex;
+  position: relative;
+}
+
+.FieldContainer {
+  max-height: 4em;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  border: 3px rgba(224, 55, 55, 0) solid;
+  padding: 10px;
+  min-width: 100%;
+}
+
+.Icon img {
+  margin-top: 5px;
+  padding-right: 10px;
+  height: 39px;
+  width: 39px;
+}
+
+.Field {
+  width: 90%;
+  height: 100%;
+  border: none;
+  color: #000;
+  font-size: medium;
+  background-color: white;
+  font-family: var(--smooch-sans);
+}
+
+.Field.selected {
+  background-color: white !important;
+}
+
+textarea:focus,
+.Field:focus {
+  outline: none;
+}
+
+.Field::placeholder {
+  color: #000;
+  font-family: var(--smooch-sans);
+  font-size: medium;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.invalid {
+  border: 3px rgb(224, 55, 55) solid;
+}
+
+.invalid input {
+  color: red;
+}
+
+.ValidationMessage {
+  width: 100%;
+  color: #fff;
+  font-size: large;
+  position: absolute;
+  top: 0;
+  left: 105%; /* You may need to adjust the left position based on your layout */
+  background-color: white;
+  color: rgb(224, 55, 55);
+  padding: 20px;
+  white-space: pre-line;
+  content: "\A";
+}
+
+.ValidationMessage::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-50%) rotate(10deg);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+@media (max-width: 767px) {
+  .InputFields {
+    flex-direction: column;
+    max-width: 70vw;
+  }
+
+  .ValidationMessage {
+    position: inherit;
+    top: 10px;
+    left: 0px;
+  }
+
+  .ValidationMessage::before {
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

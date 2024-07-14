@@ -1,0 +1,59 @@
+.UserDeatilsDiv {
+  background-color: white;
+  border-radius: 13px;
+  width: 19rem;
+  height: 20rem;
+  padding: 20px;
+  color: black;
+  font-family: var(--poppins);
+}
+
+.imagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagecontainer img {
+  border-radius: 50%;
+  min-height: 7rem;
+  width: 7rem;
+  background-color: black;
+}
+
+.imagecontainer span {
+  font-size: large;
+  font-weight: 600;
+}
+
+.details {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details label {
+  font-size: medium;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.details span {
+  font-size: 1.1em;
+}
+
+@media (max-width: 767px) {
+  .UserDeatilsDiv {
+    width: 70vw;
+  }
+
+  .details label {
+    font-size: 15px;
+  }
+
+  .details span {
+    font-size: 15px;
+  }
+}

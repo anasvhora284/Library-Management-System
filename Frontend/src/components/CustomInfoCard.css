@@ -1,0 +1,38 @@
+.commonCardContainer {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  width: 25%;
+  min-height: 18vh;
+  padding: 20px;
+  font-family: var(--poppins);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.CustomCardHeadings > span {
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.CustomCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+
+.CustomCard > span {
+  font-family: var(--poppins);
+  font-size: x-large;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .commonCardContainer {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}

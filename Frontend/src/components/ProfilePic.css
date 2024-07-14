@@ -1,0 +1,43 @@
+.ProfilePicComonentDiv {
+  color: white;
+  margin-top: 3%;
+  min-width: 70vw;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  background: linear-gradient(#141b2b, #141b2b) padding-box,
+    linear-gradient(to right, #011333, #2aadc3, #00d64f, #011333) border-box;
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
+
+.ChooseProfilePic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+  font-family: var(--poppins);
+  font-weight: 500;
+  padding: 50%;
+}
+
+.ChooseProfilePic {
+  width: 6em;
+  height: 6em;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background-color: #2d2727;
+  cursor: pointer;
+}
+
+.ProfileUserName {
+  margin-top: 20px;
+  font-size: 18px;
+}

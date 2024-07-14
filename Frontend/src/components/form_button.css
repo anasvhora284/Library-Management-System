@@ -1,0 +1,64 @@
+.ButtonDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PrimaryBgColor {
+  background-color: var(--primary-color);
+}
+
+.PrimaryBgColor:hover::after {
+  background-color: var(--secondary-color);
+}
+
+.SecondaryBgColor {
+  background-color: var(--secondary-color);
+}
+
+.SecondaryBgColor:hover::after {
+  background-color: var(--primary-color);
+}
+
+.CustomBtn {
+  width: 90%;
+  height: 2.3em;
+  margin-bottom: 0.5em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--smooch-sans);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.CustomBtn:hover {
+  color: white;
+}
+
+.CustomBtn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.CustomBtn:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.MobileImageDiv {
+  display: none;
+}

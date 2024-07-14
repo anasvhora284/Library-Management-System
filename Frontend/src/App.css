@@ -1,0 +1,5 @@
+@import "./environment";
+
+* {
+  font-family: var(--poppins);
+}
